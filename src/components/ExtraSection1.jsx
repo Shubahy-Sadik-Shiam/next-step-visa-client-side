@@ -1,3 +1,6 @@
+import pic1 from "../assets/pic1.png"
+import pic2 from "../assets/pic2.png"
+import pic3 from "../assets/pic3.png"
 const ExtraSection1 = () => {
   return (
     <div className="my-20">
@@ -5,47 +8,53 @@ const ExtraSection1 = () => {
 
       <div className="flex">
         <div>
-          <ul class="steps steps-vertical ">
-            <li class="step my-20"></li>
+          <ul class="steps steps-vertical pt-20">
+            <li class="step my-14"></li>
             <li class="step"></li>
             <li class="step"></li>
           </ul>
         </div>
-        <div className="w-full">
-          <div className="card card-side bg-base-100 shadow-xl">
-            <figure>
+        <div className="w-full mt-10 space-y-4">
+          {/* card-1 */}
+          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl">
+            <figure className="w-44">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                src={pic1}
                 alt="Movie"
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">New movie is released!</h2>
-              <p>Click the button to watch on Jetflix app.</p>
+              <h2 className="card-title">
+              Apply online</h2>
+              <p>Secure online application saves time and checks for errors</p>
             </div>
           </div>
-          <div className="card card-side bg-base-100 shadow-xl">
-            <figure>
+          {/* card 2 */}
+          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl">
+            <figure className="w-44">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                src={pic2}
                 alt="Movie"
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">New movie is released!</h2>
-              <p>Click the button to watch on Jetflix app.</p>
+              <h2 className="card-title">
+              Mail documents</h2>
+              <p>No need to stand in line at the consulate, we will do it for you</p>
             </div>
           </div>
-          <div className="card card-side bg-base-100 shadow-xl">
-            <figure>
+          {/* card 3 */}
+          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl">
+            <figure className="w-44">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                src={pic3}
                 alt="Movie"
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">New movie is released!</h2>
-              <p>Click the button to watch on Jetflix app.</p>
+              <h2 className="card-title">
+              Receive passport, visa</h2>
+              <p>Real time status updates will keep you informed.</p>
             </div>
           </div>
         </div>

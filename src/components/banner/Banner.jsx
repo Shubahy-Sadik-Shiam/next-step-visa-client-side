@@ -41,7 +41,7 @@ const Banner = () => {
             }}
             data-swiper-parallax="-23%"
           ></div>
-           <div className='bg-black bg-opacity-15 p-5 w-[500px] backdrop-blur-sm rounded-lg'>
+           <div className='bg-black bg-opacity-15 p-5 md:w-[500px] backdrop-blur-sm rounded-lg'>
            <div className="title text-white" data-swiper-parallax="-300">
             Explore the World with Ease
             </div>
@@ -62,7 +62,7 @@ const Banner = () => {
             }}
             data-swiper-parallax="-23%"
           ></div>
-           <div className='bg-white bg-opacity-50 p-5 w-[500px] backdrop-blur-sm rounded-lg'>
+           <div className='bg-white bg-opacity-50 p-5 md:w-[500px] backdrop-blur-sm rounded-lg'>
            <div className="title" data-swiper-parallax="-300">
             Your Gateway to Global <br /> Opportunities
             </div>
@@ -83,7 +83,7 @@ const Banner = () => {
             }}
             data-swiper-parallax="-23%"
           ></div>
-           <div className='bg-white bg-opacity-50 p-5 w-[500px] backdrop-blur-sm rounded-lg'>
+           <div className='bg-white bg-opacity-50 p-5 md:w-[500px] backdrop-blur-sm rounded-lg'>
            <div className="title" data-swiper-parallax="-300">
             Travel Beyond Borders
             </div>
