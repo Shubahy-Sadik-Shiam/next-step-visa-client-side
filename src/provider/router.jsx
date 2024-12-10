@@ -9,11 +9,13 @@ import VisaDetails from "../pages/VisaDetails";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -39,7 +41,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/myVisaApplication",
-        element: <MyVisaApplication></MyVisaApplication>,
+        element: (
+          <PrivateRoute>
+            <MyVisaApplication></MyVisaApplication>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("http://localhost:4000/myApplied"),
       },
       {
         path: "/visa/:id",

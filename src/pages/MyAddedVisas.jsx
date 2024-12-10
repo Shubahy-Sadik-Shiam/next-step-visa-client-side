@@ -1,9 +1,9 @@
 const MyAddedVisas = () => {
-    return (
-        <div>
-            My added Visas
-        </div>
-    );
+  return (
+    <div>
+      My added Visas
+    </div>
+  );
 };
 
 export default MyAddedVisas;

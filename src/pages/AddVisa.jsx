@@ -38,19 +38,17 @@ const AddVisa = () => {
       method,
       doc,
     };
-    console.log(visaInfo);
 
     fetch("http://localhost:4000/visas", {
-        method: "POST",
-        headers: {
-            "content-type": "application/json"
-        },
-        body: JSON.stringify(visaInfo)
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(visaInfo),
     })
-    .then(res=>res.json())
-    .then(data=> {
-        console.log(data);
-        if(data.insertedId){
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
           const Toast = Swal.mixin({
             toast: true,
             position: "top-end",
@@ -64,11 +62,11 @@ const AddVisa = () => {
           });
           Toast.fire({
             icon: "success",
-            title: "Google login successful",
+            title: "Visa added successful",
           });
         }
-        form.reset()
-    })
+        form.reset();
+      });
   };
   return (
     <div className="w-10/12 mx-auto">

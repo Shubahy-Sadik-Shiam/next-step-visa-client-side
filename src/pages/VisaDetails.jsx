@@ -51,7 +51,7 @@ const VisaDetails = () => {
           </div>
         </div>
       </div>
-      <Modal fee={fee}></Modal>
+      <Modal loadedVisa={loadedVisa}></Modal>
     </div>
   );
 };
