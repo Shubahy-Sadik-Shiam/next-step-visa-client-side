@@ -3,7 +3,6 @@ import VisaCard from "../components/VisaCard";
 
 const AllVisas = () => {
   const allVisas = useLoaderData();
-  console.log(allVisas);
   return (
     <div className="w-10/12 mx-auto">
         <h2 className="text-4xl text-center font-bold my-6">Explore All Visa Categories: Your Complete <br /> Guide to Global Travel</h2>

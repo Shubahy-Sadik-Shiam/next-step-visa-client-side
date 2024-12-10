@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import Modal from "../components/Modal";
 
 const VisaDetails = () => {
   const loadedVisa = useLoaderData();
@@ -46,10 +47,11 @@ const VisaDetails = () => {
             }
           </div>
           <div className="card-actions">
-            <button className="btn btn-primary">Apply for the Visa</button>
+            <button onClick={() => document.getElementById("my_modal_5").showModal()} className="btn btn-primary">Apply for the Visa</button>
           </div>
         </div>
       </div>
+      <Modal fee={fee}></Modal>
     </div>
   );
 };

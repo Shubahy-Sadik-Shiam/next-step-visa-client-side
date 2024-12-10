@@ -3,7 +3,6 @@ import VisaCard from "./VisaCard";
 
 const LatestVisa = () => {
     const loadedVisa = useLoaderData()
-    console.log(loadedVisa);
     return (
         <div>
             <h2 className="text-4xl my-10 text-center font-bold">Stay Updated: Latest Visa <br /> Opportunities and Guidelines</h2>

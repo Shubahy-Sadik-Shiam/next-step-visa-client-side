@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const AddVisa = () => {
   const handleAddVisa = (e) => {
     e.preventDefault();
@@ -49,7 +51,21 @@ const AddVisa = () => {
     .then(data=> {
         console.log(data);
         if(data.insertedId){
-          alert("Visa added successful")
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Google login successful",
+          });
         }
         form.reset()
     })
