@@ -56,7 +56,7 @@ const ApplyCard = ({ visa, visas, setVisas }) => {
           <h2 className="card-title">{name}</h2>
           <div className="lg:flex justify-between">
             <div className="lg:flex gap-5">
-              <div>
+              <div className="space-y-1">
                 <p>
                   <span className="font-bold">User Name:</span> {firstName}{" "}
                   {lastName}
@@ -72,7 +72,7 @@ const ApplyCard = ({ visa, visas, setVisas }) => {
                   {method}
                 </p>
               </div>
-              <div>
+              <div className="space-y-1">
                 <p>
                   <span className="font-bold">Fee:</span> {fee}
                 </p>

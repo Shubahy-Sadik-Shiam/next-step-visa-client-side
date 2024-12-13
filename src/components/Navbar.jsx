@@ -9,7 +9,8 @@ const Navbar = () => {
     setIsOpen(!isOpen)
   }
   return (
-    <div className="navbar bg-base-100 py-5 z-50 sticky">
+    <header className="sticky top-0 z-10 backdrop-blur-md pb-10">
+      <div className="navbar bg-base-100 py-4 z-50 sticky">
       <div className="navbar-start">
         <div className="dropdown relative">
           <div onClick={toggleMenu} tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -102,6 +103,7 @@ const Navbar = () => {
         )}
       </div>
     </div>
+    </header>
   );
 };
 

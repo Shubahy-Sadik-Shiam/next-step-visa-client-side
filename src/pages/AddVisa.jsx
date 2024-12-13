@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import Swal from "sweetalert2";
+import { AuthContext } from "../provider/AuthProvider";
 
 const AddVisa = () => {
+  const {user} = useContext(AuthContext)
+  const email = user?.email;
+  console.log(email);
   const handleAddVisa = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -37,6 +42,7 @@ const AddVisa = () => {
       validity,
       method,
       doc,
+      email
     };
 
     fetch("http://localhost:4000/visas", {
