@@ -17,12 +17,13 @@ const VisaDetails = () => {
     doc,
   } = loadedVisa;
   return (
-    <div className="pt-5">
+    <div className="">
       <div className="md:w-6/12 w-10/12 h-[600px] mx-auto card bg-base-100 shadow-xl">
-        <figure>
+        <figure className="">
           <img
+          className="w-full"
             src={photo}
-            alt="Shoes"
+            alt="country"
           />
         </figure>
         <div className="card-body">

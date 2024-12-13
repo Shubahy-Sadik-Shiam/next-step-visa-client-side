@@ -5,7 +5,7 @@ const VisaCard = ({ visa }) => {
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure className="px-10 pt-10">
-        <img src={photo} alt="Shoes" className="rounded-xl" />
+        <img src={photo} alt="country" className="rounded-xl h-36 w-60" />
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{name}</h2>
