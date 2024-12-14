@@ -5,7 +5,6 @@ import { AuthContext } from "../provider/AuthProvider";
 const AddVisa = () => {
   const {user} = useContext(AuthContext)
   const email = user?.email;
-  console.log(email);
   const handleAddVisa = (e) => {
     e.preventDefault();
     const form = e.target;

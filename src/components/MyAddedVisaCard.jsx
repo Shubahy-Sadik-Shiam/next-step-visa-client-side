@@ -1,18 +1,46 @@
-import { useState } from "react";
-import Modal2 from "./Modal2";
+import Swal from "sweetalert2";
 
-const MyAddedVisaCard = ({ vis }) => {
+const MyAddedVisaCard = ({ vis, handleUpdate, visa, setVisa }) => {
   const { photo, name, type, time, fee, validity, method, _id } = vis;
-  const [visa, setVisa] = useState(vis)
 
-  const handleUpdate = (_id) => {
-    document.getElementById(`my_modal_${_id}`).showModal();
+  // const handleUpdate = (_id) => {
+  //   document.getElementById(`my_modal_${_id}`).showModal();
 
-    fetch(`http://localhost:4000/allVisas/${_id}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setVisa(data);
-      });
+  //   fetch(`http://localhost:4000/allVisas/${_id}`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setVisa(data);
+  //     });
+  // };
+
+  const handleDelete = (_id) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`http://localhost:4000/allVisas/${_id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.deletedCount) {
+              Swal.fire({
+                title: "Deleted!",
+                text: "Application has been removed.",
+                icon: "success",
+              });
+              const remainingVisa = visa.filter((v) => v._id !== _id);
+              setVisa(remainingVisa);
+            }
+          });
+      }
+    });
   };
   return (
     <div>
@@ -45,18 +73,20 @@ const MyAddedVisaCard = ({ vis }) => {
               </div>
             </div>
             <div className="lg:flex flex-col gap-2">
-              <button
-                onClick={() => handleUpdate(_id)}
+              <a
+                href="#my_modal_8"
+                onClick={() => handleUpdate(vis)}
                 className="btn max-sm:mr-2 md:mr-2 lg:mr-0"
               >
                 Update
+              </a>
+              <button onClick={() => handleDelete(_id)} className="btn">
+                Delete
               </button>
-              <button className="btn">Delete</button>
             </div>
           </div>
         </div>
       </div>
-      <Modal2 visa={visa}></Modal2>
     </div>
   );
 };
