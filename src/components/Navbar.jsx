@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { Typewriter } from "react-simple-typewriter";
 
 const Navbar = () => {
   const { user, logOutUser } = useContext(AuthContext);
@@ -60,7 +61,17 @@ const Navbar = () => {
             )}
           </div>
          <div>
-         <a className="btn btn-ghost text-xl mb-3">NEXT STEP VISA</a>
+         <a className="btn btn-ghost text-2xl mb-3 font-bold">
+          <Typewriter
+                    
+                    cursorBlinking
+                    delaySpeed={1000}
+                    deleteSpeed={70}
+                    loop={0}
+                    typeSpeed={80}
+                    words={["NEXT STEP VISA"]}
+                  />
+          </a>
           <label className="flex lg:hidden cursor-pointer gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +109,7 @@ const Navbar = () => {
          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 font-semibold">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
