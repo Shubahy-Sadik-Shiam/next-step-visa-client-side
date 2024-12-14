@@ -50,11 +50,11 @@ const AllVisas = () => {
         Explore All Visa Categories: Your Complete <br /> Guide to Global Travel
       </h2>
 
-      <details className="dropdown mb-2">
-        <summary className="btn m-1 w-40">
+      <details className="dropdown">
+        <summary className="btn m-1 w-40 mb-2">
           <p className="text-lg">Filter</p> <FaFilter />
         </summary>
-        <ul className="menu dropdown-content bg-gray-400 bg-opacity-30 space-y-1 rounded-box z-[1] w-52 p-2 shadow">
+        <ul className="menu dropdown-content bg-gray-400 backdrop-blur-lg bg-opacity-30 space-y-1 rounded-box z-[1] w-52 p-2 shadow">
           <li className="bg-gray-100 rounded-xl">
             <a onClick={handleAllVisa}>All Visa</a>
           </li>
