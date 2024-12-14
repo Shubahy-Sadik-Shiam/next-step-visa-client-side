@@ -79,6 +79,7 @@ const Modal2 = ({ visa, singleVisa, setVisa, isOpen, setIsOpen }) => {
                 validity,
                 method,
                 doc,
+                _id
               }
             : scheduleData
         );
