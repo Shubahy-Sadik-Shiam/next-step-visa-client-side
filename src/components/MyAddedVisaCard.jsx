@@ -44,7 +44,7 @@ const MyAddedVisaCard = ({ vis, handleUpdate, visa, setVisa }) => {
   };
   return (
     <div>
-      <div className="card w-10/12 mx-auto card-side bg-base-100 shadow-xl">
+      <div className="card w-10/12 mx-auto card-side bg-base-100 shadow-lg">
         <figure>
           <img src={photo} className="w-60 h-48 p-5" alt="country" />
         </figure>

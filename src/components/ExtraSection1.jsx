@@ -1,21 +1,15 @@
-import { Typewriter } from "react-simple-typewriter";
 import pic1 from "../assets/pic1.png";
 import pic2 from "../assets/pic2.png";
 import pic3 from "../assets/pic3.png";
+import { Fade } from "react-awesome-reveal";
 const ExtraSection1 = () => {
   return (
     <div className="my-20">
-      <h2 className="text-4xl font-bold text-center">
-        <Typewriter
-          cursor
-          cursorBlinking
-          delaySpeed={1000}
-          deleteSpeed={50}
-          loop={0}
-          typeSpeed={80}
-          words={["How does VisaHQ work?"]}
-        />
-      </h2>
+      <Fade duration={3000}>
+        <h2 className="text-4xl font-bold text-center">
+          How does VisaHQ work?
+        </h2>
+      </Fade>
 
       <div className="flex">
         <div>
@@ -27,7 +21,8 @@ const ExtraSection1 = () => {
         </div>
         <div className="w-full mt-10 space-y-4">
           {/* card-1 */}
-          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl">
+         <Fade cascade duration={2000} damping={0.3}>
+         <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
             <figure className="w-44">
               <img src={pic1} alt="Movie" />
             </figure>
@@ -36,8 +31,9 @@ const ExtraSection1 = () => {
               <p>Secure online application saves time and checks for errors</p>
             </div>
           </div>
+         
           {/* card 2 */}
-          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl">
+          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
             <figure className="w-44">
               <img src={pic2} alt="Movie" />
             </figure>
@@ -49,7 +45,7 @@ const ExtraSection1 = () => {
             </div>
           </div>
           {/* card 3 */}
-          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl">
+          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
             <figure className="w-44">
               <img src={pic3} alt="Movie" />
             </figure>
@@ -58,6 +54,7 @@ const ExtraSection1 = () => {
               <p>Real time status updates will keep you informed.</p>
             </div>
           </div>
+          </Fade>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ const LatestVisa = () => {
           cursor
           cursorBlinking
           delaySpeed={1000}
-          deleteSpeed={25}
+          deleteSpeed={70}
           loop={0}
           typeSpeed={75}
           words={["Stay Updated: Latest Visa Opportunities and Guidelines"]}
