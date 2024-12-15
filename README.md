@@ -1,8 +1,15 @@
-# React + Vite
+# NEXT STEP VISA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A user-friendly Visa Navigator Portal to simplify the process of checking visa requirements, applying for visas online, and tracking applications. 
 
-Currently, two official plugins are available:
+## Feature
+1. A add visa method by which a visa can be added,
+2. Filter functionality based on visa types,
+3. Search functionality by country name,
+4. A dark/light theme toggle,
+5. Visa update and delete function
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live site
+next-step-visa.web.app
+
+
