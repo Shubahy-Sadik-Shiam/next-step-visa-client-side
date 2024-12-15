@@ -10,6 +10,7 @@ A user-friendly Visa Navigator Portal to simplify the process of checking visa r
 5. Visa update and delete function
 
 ## Live site
-next-step-visa.web.app
+https://next-step-visa.web.app/
 
+Optional: next-step-visa.web.app
 
