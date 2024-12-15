@@ -3,16 +3,6 @@ import Swal from "sweetalert2";
 const MyAddedVisaCard = ({ vis, handleUpdate, visa, setVisa }) => {
   const { photo, name, type, time, fee, validity, method, _id } = vis;
 
-  // const handleUpdate = (_id) => {
-  //   document.getElementById(`my_modal_${_id}`).showModal();
-
-  //   fetch(`http://localhost:4000/allVisas/${_id}`)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setVisa(data);
-  //     });
-  // };
-
   const handleDelete = (_id) => {
     Swal.fire({
       title: "Are you sure?",
@@ -44,7 +34,7 @@ const MyAddedVisaCard = ({ vis, handleUpdate, visa, setVisa }) => {
   };
   return (
     <div>
-      <div className="card w-10/12 mx-auto card-side bg-base-100 shadow-lg">
+      <div className="card max-sm:flex-col w-10/12 mx-auto card-side bg-gradient-to-br from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] shadow-lg">
         <figure>
           <img src={photo} className="w-60 h-48 p-5" alt="country" />
         </figure>
@@ -76,11 +66,11 @@ const MyAddedVisaCard = ({ vis, handleUpdate, visa, setVisa }) => {
               <a
                 href="#my_modal_8"
                 onClick={() => handleUpdate(vis)}
-                className="btn max-sm:mr-2 md:mr-2 lg:mr-0"
+                className="btn bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#A29AE5] text-white font-bold max-sm:mr-2 md:mr-2 lg:mr-0"
               >
                 Update
               </a>
-              <button onClick={() => handleDelete(_id)} className="btn">
+              <button onClick={() => handleDelete(_id)} className="btn bg-gradient-to-r from-red-600 text-white font-bold to-red-400">
                 Delete
               </button>
             </div>

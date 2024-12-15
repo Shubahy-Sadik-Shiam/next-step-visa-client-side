@@ -7,10 +7,9 @@ const ExtraSection1 = () => {
     <div className="my-20">
       <Fade duration={3000}>
         <h2 className="text-4xl font-bold text-center">
-          How does VisaHQ work?
+          How does Next Step Visa work?
         </h2>
       </Fade>
-
       <div className="flex">
         <div>
           <ul class="steps steps-vertical pt-20">
@@ -22,7 +21,7 @@ const ExtraSection1 = () => {
         <div className="w-full mt-10 space-y-4">
           {/* card-1 */}
          <Fade cascade duration={2000} damping={0.3}>
-         <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
+         <div className="card max-sm:w-72 justify-center items-center card-side bg-gradient-to-l from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] transition-transform duration-300 hover:scale-95 hover:shadow-xl">
             <figure className="w-44">
               <img src={pic1} alt="Movie" />
             </figure>
@@ -33,7 +32,7 @@ const ExtraSection1 = () => {
           </div>
          
           {/* card 2 */}
-          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
+          <div className="bg-gradient-to-r from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] card max-sm:w-72 justify-center items-center card-side transition-transform duration-300 hover:scale-95 hover:shadow-xl">
             <figure className="w-44">
               <img src={pic2} alt="Movie" />
             </figure>
@@ -45,7 +44,7 @@ const ExtraSection1 = () => {
             </div>
           </div>
           {/* card 3 */}
-          <div className="card max-sm:w-72 justify-center items-center card-side bg-base-100 shadow-xl transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
+          <div className="card bg-gradient-to-l from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] max-sm:w-72 justify-center items-center card-side shadow-xl transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
             <figure className="w-44">
               <img src={pic3} alt="Movie" />
             </figure>

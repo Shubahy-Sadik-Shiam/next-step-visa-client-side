@@ -6,7 +6,7 @@ const LatestVisa = () => {
   const loadedVisa = useLoaderData();
   return (
     <div>
-      <h2 className="text-4xl my-10 text-center font-bold">
+      <h2 className="text-4xl bg-gradient-to-br from-[#121C84] via-[#4B5ECF] to-[#8278DA] bg-clip-text text-transparent my-10 text-center font-bold">
         {" "}
         <Typewriter
           cursor

@@ -18,7 +18,7 @@ const VisaDetails = () => {
   } = loadedVisa;
   return (
     <div className="">
-      <div className="md:w-6/12 w-10/12 h-[600px] mx-auto card bg-base-100 shadow-xl">
+      <div className="md:w-6/12 w-10/12 h-[600px] mx-auto card bg-gradient-to-r from-[#cdd0f7] via-[#ebeeff] to-[#f3f3fa] shadow-xl">
         <figure className="">
           <img
           className="w-full"
@@ -48,7 +48,7 @@ const VisaDetails = () => {
             }
           </div>
           <div className="card-actions">
-            <button onClick={() => document.getElementById("my_modal_5").showModal()} className="btn btn-primary">Apply for the Visa</button>
+            <button onClick={() => document.getElementById("my_modal_5").showModal()} className="btn bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#A29AE5] text-white">Apply for the Visa</button>
           </div>
         </div>
       </div>

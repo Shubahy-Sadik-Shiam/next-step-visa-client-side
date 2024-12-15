@@ -23,7 +23,7 @@ const MyAddedVisas = () => {
   }
 
   return (
-    <div>
+    <div className="my-10">
     <div className="space-y-4">
       {
         visa.map(vis=> <MyAddedVisaCard 

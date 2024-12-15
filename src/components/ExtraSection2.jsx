@@ -21,25 +21,25 @@ const ExtraSection2 = () => {
                 />
       </h3>
       <div className="grid gap-4 md:grid-cols-2">
-        <div className="card bg-base-200 transition-transform duration-300 hover:scale-95 hover:shadow-xl">
+        <div className="card bg-gradient-to-br from-[#cdd0f7] via-[#ebeeff] to-[#ffffff]transition-transform duration-300 hover:scale-95 hover:shadow-xl">
           <div className="card-body items-center text-center">
             <h2 className="card-title">Innovations</h2>
             <p>Real time status updates sent to your email or mobile phone.</p>
           </div>
         </div>
-        <div className="card bg-base-200 transition-transform duration-300 hover:scale-95 hover:shadow-xl">
+        <div className="card bg-gradient-to-br from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] transition-transform duration-300 hover:scale-95 hover:shadow-xl">
           <div className="card-body items-center text-center">
             <h2 className="card-title">Service</h2>
             <p>Dedicated call center, expert help, live chat.</p>
           </div>
         </div>
-        <div className="card bg-base-200 transition-transform duration-300 hover:scale-95 hover:shadow-xl">
+        <div className="card bg-gradient-to-tl from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] transition-transform duration-300 hover:scale-95 hover:shadow-xl">
           <div className="card-body items-center text-center">
             <h2 className="card-title">Security</h2>
             <p>Guaranteed accuracy, privacy and security.</p>
           </div>
         </div>
-        <div className="card bg-base-200 transition-transform duration-300 hover:scale-95 hover:shadow-xl">
+        <div className="card bg-gradient-to-tl from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] transition-transform duration-300 hover:scale-95 hover:shadow-xl">
           <div className="card-body items-center text-center">
             <h2 className="card-title">Simplicity</h2>
             <p>No hidden fees. Complete Transparency.</p>

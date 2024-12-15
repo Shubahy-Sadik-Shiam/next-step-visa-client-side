@@ -74,11 +74,11 @@ const AddVisa = () => {
       });
   };
   return (
-    <div className="w-10/12 mx-auto">
+    <div className="w-10/12 mx-auto mb-10">
       <h2 className="text-4xl font-bold text-center mt-5">
         Streamline Your Travel: Add Your Visa with Ease
       </h2>
-      <form onSubmit={handleAddVisa} className="bg-slate-200 p-10 mt-10">
+      <form onSubmit={handleAddVisa} className="bg-gradient-to-br from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] rounded-xl p-10 mt-10">
         {/* row-1 */}
         <div className="flex gap-4">
           <div className="form-control md:w-1/2">
@@ -228,7 +228,7 @@ const AddVisa = () => {
             />
           </div>
         </div>
-        <input type="submit" className="btn btn-block mt-5" value="Add Visa" />
+        <input type="submit" className="btn bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#A29AE5 text-white font-bold btn-block mt-5" value="Add Visa" />
       </form>
     </div>
   );

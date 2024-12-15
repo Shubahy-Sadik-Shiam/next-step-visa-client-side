@@ -1,7 +1,6 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
-import { Typewriter } from "react-simple-typewriter";
 
 const Navbar = () => {
   const { user, logOutUser } = useContext(AuthContext);
@@ -9,9 +8,28 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="sticky top-0 z-10 backdrop-blur-md pb-10">
-      <div className="navbar bg-base-100 py-4 z-50 sticky">
+    <header className={`sticky top-0 z-10 backdrop-blur-md ${isScrolled? "pb-16" : ""} transition-all duration-300`}>
+      <div className="navbar bg-gradient-to-br from-[#121C84] via-[#4B5ECF] to-[#8278DA] py-4 z-50 sticky">
         <div className="navbar-start">
           <div className="dropdown relative">
             <div
@@ -61,17 +79,9 @@ const Navbar = () => {
             )}
           </div>
          <div>
-         <a className="btn btn-ghost text-2xl mb-3 font-bold">
-          <Typewriter
-                    
-                    cursorBlinking
-                    delaySpeed={1000}
-                    deleteSpeed={70}
-                    loop={0}
-                    typeSpeed={80}
-                    words={["NEXT STEP VISA"]}
-                  />
-          </a>
+         <p className="btn btn-ghost md:text-2xl text-xl mb-3 font-bold bg-gradient-to-b from-white to-[#f4ffbf] bg-clip-text text-transparent">
+         NEXT STEP VISA
+          </p>
           <label className="flex lg:hidden cursor-pointer gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +119,7 @@ const Navbar = () => {
          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-semibold">
+          <ul className="menu text-white menu-horizontal px-1 font-semibold text-[16px]">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -176,17 +186,17 @@ const Navbar = () => {
                   alt=""
                 />
               </div>
-              <button onClick={logOutUser} className="btn">
+              <button onClick={logOutUser} className="btn bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#A29AE5] text-white font-bold">
                 Log out
               </button>
             </div>
           ) : (
             <div>
               {" "}
-              <Link to="/login" className="btn">
+              <Link to="/login" className="btn bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#A29AE5] text-white font-bold">
                 Login
               </Link>
-              <Link to="/register" className="btn">
+              <Link to="/register" className="btn bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#A29AE5] text-white font-bold ml-2">
                 Register
               </Link>
             </div>

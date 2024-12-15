@@ -1,8 +1,5 @@
-import { useEffect, useState } from "react";
-
+import Swal from "sweetalert2";
 const Modal2 = ({ visa, singleVisa, setVisa, isOpen, setIsOpen }) => {
-
-  // const [isOpen, setIsOpen] = useState(true)
   
   const {
     _id,
@@ -85,7 +82,21 @@ const Modal2 = ({ visa, singleVisa, setVisa, isOpen, setIsOpen }) => {
         );
         setVisa(updatedData);
         setIsOpen(false)
-        alert("Data Updated");
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top",
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+          },
+        });
+        Toast.fire({
+          icon: "success",
+          title: "Visa Information Updated",
+        });
       });
   };
   
@@ -107,7 +118,7 @@ const Modal2 = ({ visa, singleVisa, setVisa, isOpen, setIsOpen }) => {
           </form>
         </div>
 
-        <form onSubmit={handleUpdate} className="bg-slate-200 p-10">
+        <form onSubmit={handleUpdate} className="bg-gradient-to-br from-[#cdd0f7] via-[#ebeeff] to-[#f3f3fa] rounded-xl p-10">
           {/* row-1 */}
           <div className="flex gap-4">
             <div className="form-control md:w-1/2">
@@ -259,7 +270,7 @@ const Modal2 = ({ visa, singleVisa, setVisa, isOpen, setIsOpen }) => {
           </div>
           <input
             type="submit"
-            className="btn btn-block mt-5"
+            className="btn btn-block bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#A29AE5] text-white mt-5"
             value="Update Visa Information"
           />
         </form>

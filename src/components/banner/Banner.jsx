@@ -14,7 +14,7 @@ import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 const Banner = () => {
   return (
-    <div className='h-[600px]'>
+    <div className='h-[600px] pt-5'>
       <>
         <Swiper
           style={{
@@ -49,7 +49,7 @@ const Banner = () => {
           ></div>
            <div className='bg-black bg-opacity-15 p-5 md:w-[500px] backdrop-blur-sm rounded-lg'>
            <div className="title text-white" data-swiper-parallax="-300">
-           <p className='font-bold'> Explore the World with Ease</p>
+           <p className='font-bold max-sm:text-2xl'> Explore the World with Ease</p>
             </div>
             <div className="text text-white" data-swiper-parallax="-100">
               <p>
@@ -70,7 +70,7 @@ const Banner = () => {
           ></div>
            <div className='bg-white bg-opacity-50 p-5 md:w-[500px] backdrop-blur-sm rounded-lg'>
            <div className="title" data-swiper-parallax="-300">
-            <p className='font-bold'>Your Gateway to Global <br /> Opportunities</p>
+            <p className='font-bold max-sm:text-2xl'>Your Gateway to Global <br /> Opportunities</p>
             </div>
             <div className="text" data-swiper-parallax="-100">
               <p>
@@ -91,7 +91,7 @@ const Banner = () => {
           ></div>
            <div className='bg-white bg-opacity-50 p-5 md:w-[500px] backdrop-blur-sm rounded-lg'>
            <div className="title" data-swiper-parallax="-300">
-            <p className='font-bold'>Travel Beyond Borders</p>
+            <p className='font-bold max-sm:text-2xl'>Travel Beyond Borders</p>
             </div>
             <div className="text" data-swiper-parallax="-100">
               <p>

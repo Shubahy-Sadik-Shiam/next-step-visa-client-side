@@ -48,7 +48,7 @@ const ApplyCard = ({ visa, visas, setVisas }) => {
 
   return (
     <div>
-      <div className="card max-sm:flex-col card-side bg-base-100 shadow-xl">
+      <div className="card max-sm:flex-col card-side bg-gradient-to-br from-[#cdd0f7] via-[#ebeeff] to-[#ffffff] shadow-xl">
         <figure>
           <img src={photo} alt="country" className="w-60 h-48 p-5" />
         </figure>

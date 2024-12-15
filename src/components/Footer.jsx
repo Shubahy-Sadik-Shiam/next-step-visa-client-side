@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center bg-base-200 text-base-content rounded p-10 mt-20">
+      <footer className="footer footer-center bg-gradient-to-br from-[#121C84] via-[#4B5ECF] to-[#8278DA] text-white md:h-[340px] lg:h-60 rounded p-10">
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
@@ -43,6 +43,7 @@ const Footer = () => {
                 <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
               </svg>
             </a>
+            <p className="font-bold text-2xl">NEXT STEP VISA</p>
           </div>
         </nav>
         <aside>

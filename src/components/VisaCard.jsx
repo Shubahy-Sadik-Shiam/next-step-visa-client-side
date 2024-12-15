@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const VisaCard = ({ visa }) => {
   const {_id, photo, name, type, time, fee, validity, method } = visa;
   return (
-    <div className="card bg-base-100 shadow-xl transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
+    <div className="card  bg-gradient-to-br from-[#cdd0f7] via-[#f0f2fb] to-[#ffffff] transition-transform duration-300 hover:scale-95 hover:shadow-2xl">
       <figure className="px-10 pt-10">
         <img src={photo} alt="country" className="rounded-xl h-36 w-60" />
       </figure>
@@ -19,7 +19,7 @@ const VisaCard = ({ visa }) => {
         </div>
         <p><span className="font-semibold">Application Method:</span> {method}</p>
         <div className="card-actions">
-          <Link to={`/visa/${_id}`}><button className="btn btn-primary">See Details</button></Link>
+          <Link to={`/visa/${_id}`}><button className="btn bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#A29AE5] text-white font-bold">See Details</button></Link>
         </div>
       </div>
     </div>

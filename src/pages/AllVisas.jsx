@@ -12,7 +12,6 @@ const AllVisas = () => {
     fetch("http://localhost:4000/allVisas")
     .then(res=>res.json())
     .then(data=>{
-      console.log(data);
       setVisas(data)
     })
   }
@@ -22,7 +21,6 @@ const AllVisas = () => {
     fetch("http://localhost:4000/allVisas/type/Student%20Visa")
     .then(res=>res.json())
     .then(data=>{
-      console.log(data);
       setVisas(data)
     })
   }
@@ -31,7 +29,6 @@ const AllVisas = () => {
     fetch("http://localhost:4000/allVisas/type/Official%20Visa")
     .then(res=>res.json())
     .then(data=>{
-      console.log(data);
       setVisas(data)
     })
   }
@@ -40,18 +37,17 @@ const AllVisas = () => {
     fetch("http://localhost:4000/allVisas/type/Tourist%20Visa")
     .then(res=>res.json())
     .then(data=>{
-      console.log(data);
       setVisas(data)
     })
   }
   return (
-    <div className="w-10/12 mx-auto">
-      <h2 className="text-4xl text-center font-bold my-6">
+    <div className="w-10/12 mx-auto mb-10">
+      <h2 className="text-4xl bg-gradient-to-r from-[#121C84] via-[#6279fc] to-[#9c95d9] bg-clip-text text-transparent text-center font-bold my-6">
         Explore All Visa Categories: Your Complete <br /> Guide to Global Travel
       </h2>
 
       <details className="dropdown">
-        <summary className="btn m-1 w-40 mb-2">
+        <summary className="btn bg-gradient-to-br from-[#4d6afb] via-[#7a8de1] to-[#cecaf4] text-white font-bold m-1 w-40 mb-2">
           <p className="text-lg">Filter</p> <FaFilter />
         </summary>
         <ul className="menu dropdown-content bg-gray-400 backdrop-blur-lg bg-opacity-30 space-y-1 rounded-box z-[1] w-52 p-2 shadow">
