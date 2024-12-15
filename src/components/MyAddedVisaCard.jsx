@@ -14,7 +14,7 @@ const MyAddedVisaCard = ({ vis, handleUpdate, visa, setVisa }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:4000/allVisas/${_id}`, {
+        fetch(`https://assignment-10-server-tau-nine.vercel.app/allVisas/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

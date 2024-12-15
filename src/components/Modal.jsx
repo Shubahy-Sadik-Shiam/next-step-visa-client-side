@@ -24,7 +24,7 @@ const Modal = ({ loadedVisa }) => {
     const lastName = form.lastName.value;
     const userInfo = { firstName, lastName, email, currentDate, fee, name, photo, type, time, validity, method };
 
-    fetch("http://localhost:4000/myApplied", {
+    fetch("https://assignment-10-server-tau-nine.vercel.app/myApplied", {
       method: "POST",
       headers: {
         "content-type": "application/json",

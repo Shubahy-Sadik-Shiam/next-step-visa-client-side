@@ -44,7 +44,7 @@ const AddVisa = () => {
       email
     };
 
-    fetch("http://localhost:4000/visas", {
+    fetch("https://assignment-10-server-tau-nine.vercel.app/visas", {
       method: "POST",
       headers: {
         "content-type": "application/json",

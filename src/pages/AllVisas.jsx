@@ -9,7 +9,7 @@ const AllVisas = () => {
   const [visas, setVisas] = useState(allVisas)
 
   const handleAllVisa = () => {
-    fetch("http://localhost:4000/allVisas")
+    fetch("https://assignment-10-server-tau-nine.vercel.app/allVisas")
     .then(res=>res.json())
     .then(data=>{
       setVisas(data)
@@ -18,7 +18,7 @@ const AllVisas = () => {
 
   const handleStudentVisa = () => {
     
-    fetch("http://localhost:4000/allVisas/type/Student%20Visa")
+    fetch("https://assignment-10-server-tau-nine.vercel.app/allVisas/type/Student%20Visa")
     .then(res=>res.json())
     .then(data=>{
       setVisas(data)
@@ -26,7 +26,7 @@ const AllVisas = () => {
   }
   const handleOfficialVisa = () => {
 
-    fetch("http://localhost:4000/allVisas/type/Official%20Visa")
+    fetch("https://assignment-10-server-tau-nine.vercel.app/allVisas/type/Official%20Visa")
     .then(res=>res.json())
     .then(data=>{
       setVisas(data)
@@ -34,7 +34,7 @@ const AllVisas = () => {
   }
   const handleTouristVisa = () => {
 
-    fetch("http://localhost:4000/allVisas/type/Tourist%20Visa")
+    fetch("https://assignment-10-server-tau-nine.vercel.app/allVisas/type/Tourist%20Visa")
     .then(res=>res.json())
     .then(data=>{
       setVisas(data)

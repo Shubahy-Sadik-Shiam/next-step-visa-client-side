@@ -10,7 +10,7 @@ const MyAddedVisas = () => {
   const [isOpen, setIsOpen] = useState(false);
   const email = user?.email;
   useEffect(()=>{
-    fetch(`http://localhost:4000/allVisas/email/${email}`)
+    fetch(`https://assignment-10-server-tau-nine.vercel.app/allVisas/email/${email}`)
     .then(res=>res.json())
     .then(data=>{
       setVisa(data);

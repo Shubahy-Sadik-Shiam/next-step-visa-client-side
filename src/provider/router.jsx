@@ -20,12 +20,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:4000/visas"),
+        loader: () => fetch("https://assignment-10-server-tau-nine.vercel.app/visas"),
       },
       {
         path: "/allVisas",
         element: <AllVisas></AllVisas>,
-        loader: () => fetch("http://localhost:4000/allVisas"),
+        loader: () => fetch("https://assignment-10-server-tau-nine.vercel.app/allVisas"),
       },
       {
         path: "/addVisa",
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
             <MyVisaApplication></MyVisaApplication>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:4000/myApplied"),
+        loader: () => fetch("https://assignment-10-server-tau-nine.vercel.app/myApplied"),
       },
       {
         path: "/visa/:id",
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/allVisas/${params.id}`),
+          fetch(`https://assignment-10-server-tau-nine.vercel.app/allVisas/${params.id}`),
       },
       {
         path: "/login",

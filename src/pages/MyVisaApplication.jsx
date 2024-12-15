@@ -10,7 +10,7 @@ const MyVisaApplication = () => {
     e.preventDefault();
     const searchValue = e.target.input.value;
 
-    fetch(`http://localhost:4000/myApplied?searchParams=${searchValue}`)
+    fetch(`https://assignment-10-server-tau-nine.vercel.app/myApplied?searchParams=${searchValue}`)
         .then((res) => res.json())
         .then((data) => {
           setVisas(data);

@@ -54,7 +54,7 @@ const Modal2 = ({ visa, singleVisa, setVisa, isOpen, setIsOpen }) => {
       doc,
     };
 
-    fetch(`http://localhost:4000/allVisas/${_id}`, {
+    fetch(`https://assignment-10-server-tau-nine.vercel.app/allVisas/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
