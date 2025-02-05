@@ -17,14 +17,15 @@ To set up BookNest locally, follow these steps:
 3. npm start
 
 ## Technologies Used:
-React
-Tailwind CSS
-Node.js
-Mongodb
-Express.js
+1. React
+2. Tailwind CSS
+3. Node.js
+4. Mongodb
+5. Express.js
 
 ## 📦 Dependencies
 NEXT_STEP_VISA uses the following libraries:
+
 {
   "@emotion/react": "^11.14.0",
   "firebase": "^11.0.2",
@@ -41,6 +42,4 @@ NEXT_STEP_VISA uses the following libraries:
 
 ## Live site
 https://next-step-visa.web.app/
-
-Optional: next-step-visa.web.app
 
