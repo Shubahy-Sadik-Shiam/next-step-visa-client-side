@@ -12,9 +12,16 @@ A user-friendly Visa Navigator Portal to simplify the process of checking visa r
 ## 🔧 Installation
 To set up BookNest locally, follow these steps:
 
-git clone https://github.com/your-username/booknest.git cd booknest
-npm install
-npm start
+1. git clone https://github.com/your-username/booknest.git cd booknest
+2. npm install
+3. npm start
+
+## Technologies Used:
+React
+Tailwind CSS
+Node.js
+Mongodb
+Express.js
 
 ## 📦 Dependencies
 NEXT_STEP_VISA uses the following libraries:
